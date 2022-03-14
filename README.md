@@ -29,3 +29,10 @@ firebase emulators:start
 |  9099  |  Authentication  |
 |  8080  |  Cloud Firestore  |
 |  9199  |  Cloud Storage  |
+|  5001  |  Cloud Functions  |
+|  6001  |  Firebase Hosting  |
+|  4400  |  Hub REST API  |
+
+## Reference
+
+<https://firebase.google.com/docs/emulator-suite/install_and_configure?hl=ja>
