@@ -15,7 +15,8 @@ services:
       - 4400:4400 # Hub REST API
       - 8080:8080 # Cloud Firestore
       - 9199:9199 # Cloud Storage
-      - 6000:6000 # Hosting
+      - 5001:5001 # Cloud Function
+      - 6000:6001 # Hosting
     environment:
       - FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID
       - FIREBASE_TOKEN=$FIREBASE_TOKEN
