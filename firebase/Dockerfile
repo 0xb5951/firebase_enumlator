@@ -8,6 +8,6 @@ RUN apt-get update && \
 WORKDIR /firebase
 
 # Emulator ports
-EXPOSE 4000 8080 9099 9199 6000
+EXPOSE 4000 8080 9099 9199 6000 4400
 
 ENTRYPOINT ["./entrypoint.sh"]
