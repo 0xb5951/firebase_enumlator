@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  firebase:
+    build:
+      context: ./firebase
+      dockerfile: Dockerfile
+    image: firebase_emulator_image
+    container_name: firebase_emulator
+    volumes:
+      - ./firebase/workdir:/firebase:cached
+    ports:
+      - 9099:9099 # Auth
+      - 4000:4000 # Emulator Suite UI
+      - 8080:8080 # Cloud Firestore
+      - 9199:9199 # Cloud Storage
+    environment:
+      - FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID
+      - FIREBASE_TOKEN=$FIREBASE_TOKEN
+    tty: true
