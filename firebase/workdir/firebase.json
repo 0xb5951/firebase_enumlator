@@ -5,6 +5,14 @@
     "storage": {
         "rules": "storage.rules"
     },
+    "hosting": {
+        "public": "public",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ]
+    },
     "emulators": {
         "firestore": {
             "host": "0.0.0.0",
@@ -17,6 +25,10 @@
         "storage": {
             "host": "0.0.0.0",
             "port": "9199"
+        },
+        "hosting": {
+            "host": "0.0.0.0",
+            "port": "6000"
         },
         "ui": {
             "enabled": true,
